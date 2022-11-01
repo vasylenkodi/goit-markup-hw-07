@@ -1,0 +1,11 @@
+.logo {
+    @include font($family: 'Raleway', $weight: 700, $size: 26px, $line-height: 1.2, $color: getColor('logo-primary-color'))
+}
+
+.logo--accent {
+    color: getColor('accent-color');
+}
+
+.page-footer__logo {
+    @include font($family: 'Raleway', $weight: 700, $size: 26px, $line-height: 1.2, $color: getColor('footer-primary-color'))
+}

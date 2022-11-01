@@ -1,0 +1,52 @@
+.team-card {
+    box-shadow: 0px 1px 3px getColor('primary-team-card-shadow-color'), 0px 1px 1px getColor('secondary-team-card-shadow-color'), 0px 2px 1px getColor('tertiary-team-card-shadow-color');
+}
+
+.team-card__footer {
+    padding: 30px 32px;
+    background-color: getColor('primary-bg-color');
+    border-radius: 0 0 4px 4px;
+}
+
+.team-card__title {
+    @include font($weight: 500, $size: 16px, $line-height: 1.19,$color: getColor('secondary-text-color'));
+
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team-card__position {
+    @include font($size: 16px, $line-height: 1.19, $color: getColor('primary-text-color')) ;    
+
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.social-medias{
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-medias__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: getColor('icons-color');
+    @extend %centeredFlex;
+
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: getColor('icons-hover-color');
+        background-color: getColor('accent-color');
+    }
+
+}
+
+.social-medias__icon {
+    fill: currentColor;
+}
+

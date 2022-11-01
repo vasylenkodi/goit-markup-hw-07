@@ -3,8 +3,7 @@
 }
 
 .services__title {
-    @include font($weight: 700, $size: 36px, $line-height: 1.17,$color: getColor('secondary-text-color'));
-    text-align: center;
+    @extend %title;
     margin-top: 0;
     margin-bottom: 50px;
 }

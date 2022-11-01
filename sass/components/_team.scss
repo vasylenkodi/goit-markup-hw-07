@@ -1,0 +1,15 @@
+.team {
+    background-color: getColor('tertiary-bg-color');
+}
+
+.team__title {
+    @extend %title;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+}

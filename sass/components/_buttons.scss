@@ -14,7 +14,7 @@
     background-color: getColor('accent-color');
 
     @include font($weight: 700, $size: 16px, $line-height: 1.88, $spacing: 0.06em, $color: getColor('footer-primary-color'));
-    @include transition(background-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus {
         background-color: getColor('active-button-color');
@@ -32,9 +32,9 @@
     @include font($weight: 500, $size: 15, $line-height: 1.62, $color: getColor('secondary-text-color'));
     background-color: getColor('tertiary-bg-color');
 
-    @include transition(color);
-    @include transition(background-color);
-    @include transition(box-shadow);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover, &:focus {
         background-color: getColor('accent-color');

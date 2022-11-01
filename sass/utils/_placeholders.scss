@@ -23,6 +23,11 @@
   background-repeat: no-repeat;
 }
 
+%title {
+  @include font($weight: 700, $size: 36px, $line-height: 1.17, $color: getColor('secondary-text-color'));
+  text-align: center;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

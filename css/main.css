@@ -256,7 +256,7 @@ summary {
   text-decoration: none;
 }
 
-.features-list, .page-header-contacts, .site-navigation__list {
+.services__list, .features-list, .page-header-contacts, .site-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -302,6 +302,10 @@ summary {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.image {
+  display: block;
 }
 
 .button, .button-secondary, .button--primary, .form-send-out__button--primary {
@@ -564,4 +568,54 @@ summary {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
+}
+
+.services {
+  padding-top: 0;
+}
+
+.services__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services-card {
+  position: relative;
+}
+
+.services-card__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
 }/*# sourceMappingURL=main.css.map */

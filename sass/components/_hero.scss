@@ -1,0 +1,23 @@
+.hero {
+    background-color: getColor('secondary-bg-color');
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(getColor('hero-bg-gradient-start-color'), getColor('hero-bg-gradient-end-color')), url(../images/hero-background-image.jpg);
+    max-width: 1600px;
+    height: 600px;
+    @extend %backgroundImagePositioning;
+}
+
+.container--hero {
+    padding: 0px 252px;
+}
+
+.hero__title {
+    @include font($weight: 900, $size: 44px, $line-height: 1.36, $spacing: 0.06em, $color: getColor('primary-bg-color'));
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+

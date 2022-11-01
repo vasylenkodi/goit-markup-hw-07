@@ -18,6 +18,11 @@
   display: block;
 }
 
+%backgroundImagePositioning {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -37,3 +42,6 @@
   margin: 0 auto;
 }
 
+.section {
+  padding: 94px auto;
+}

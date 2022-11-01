@@ -1,0 +1,13 @@
+@mixin font($family: 'Roboto', $style: normal, $weight: 400, $size: 14px, $line-height: 1.71, $spacing: 0.03em, $color: getColor('primary-text-color')) {
+  font-family: $family, sans-serif;
+  font-style: $style;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  letter-spacing: $spacing;
+  color: $color;
+}
+
+@mixin transition($property) {
+    transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

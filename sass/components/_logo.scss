@@ -1,4 +1,6 @@
 .logo {
+    @extend %link;
+
     @include font($family: 'Raleway', $weight: 700, $size: 26px, $line-height: 1.2, $color: getColor('logo-primary-color'))
 }
 
@@ -7,5 +9,7 @@
 }
 
 .page-footer__logo {
+    @extend %link;
+
     @include font($family: 'Raleway', $weight: 700, $size: 26px, $line-height: 1.2, $color: getColor('footer-primary-color'))
 }

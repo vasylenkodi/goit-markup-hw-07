@@ -1,0 +1,49 @@
+.site-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.site-navigation__list {
+    @extend %list;
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-navigation__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.site-navigation__item {
+    position: relative;
+}
+
+.site-navigation__link {
+    @extend %link;
+
+    @include font($weight: 500, $line-height: 1.14, $spacing: 0.02em, $color: getColor('secondary-text-color'));
+    
+    display: inline-block;
+    padding: 32px 0;
+
+    @include transition(color);
+
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+.site-navigation__link--current {
+    color: getColor('accent-color');
+
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: getColor('accent-color');
+    }
+}

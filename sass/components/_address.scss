@@ -1,0 +1,26 @@
+.address-list {
+    @extend %list;
+}
+
+.address-list__link--address {
+    @extend %adressFont;
+}
+
+.address-list__link--contacts {
+    @extend %page-footerContactsFont;
+
+    margin-top: 9px;
+}
+
+.address-list__link {
+     @extend %link;
+
+     display: inline-block;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+}
+

@@ -1,0 +1,33 @@
+.social-medias-subscribe__title {
+    @extend %tertiaryTitleFont;
+
+    margin: 0 0 20px 0;
+}
+
+.page-footer__social-medias-list {
+    @extend %list;
+    display: flex;
+}
+
+.page-footer__social-medias-item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.page-footer__social-medias-link {
+    @extend %centeredFlex;
+
+    color: getColor('footer-primary-color');
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: getColor('footer-social-medias-bg');
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        background-color: getColor('accent-color');
+    }
+}
+
+.page-footer__social-medias-icon {
+    fill: currentColor;
+}

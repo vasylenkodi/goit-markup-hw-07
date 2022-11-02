@@ -28,6 +28,8 @@ $colors: (
     'hero-bg-gradient-end-color': rgba(47, 48, 58, 0.4),
     'input-border-color': rgba(33, 33, 33, 0.2),
     'modal-placeholder-color': rgba(117, 117, 117, 0.5),
+    'footer-social-medias-bg': rgba(255, 255, 255, 0.1),
+    'send-out-input-border-color': rgba(255, 255, 255, 0.3),
 );
 
 @function getColor ($key) {
@@ -174,7 +176,7 @@ $colors: (
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: getColor('primary-text-color');
+    color: getColor('footer-primary-color');
 }
 
 %page-footerContactsFont {

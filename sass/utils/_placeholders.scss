@@ -24,7 +24,7 @@
 }
 
 %title {
-  @include font($weight: 700, $size: 36px, $line-height: 1.17, $color: getColor('secondary-text-color'));
+  @extend %primaryTitleFont;
   text-align: center;
 }
 

@@ -1,5 +1,5 @@
 @import './utils/normalize';
-@import './utils/colors';
+@import './utils/variables';
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './components/buttons';
@@ -13,3 +13,4 @@
 @import './components/team';
 @import './components/team-card';
 @import './components/clients';
+@import './components/modal';

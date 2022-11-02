@@ -19,8 +19,7 @@
 
 .site-navigation__link {
     @extend %link;
-
-    @include font($weight: 500, $line-height: 1.14, $spacing: 0.02em, $color: getColor('secondary-text-color'));
+    @extend %navigationLinksFont;
     
     display: inline-block;
     padding: 32px 0;

@@ -380,52 +380,52 @@
       <!-- Модальне вiкно -->
       <div class="back-drop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="modal-close" data-modal-close>
-            <svg class="close-icon" width="11" height="11">
+          <button type="button" class="modal__modal-close-button" data-modal-close>
+            <svg class="modal__close-icon" width="11" height="11">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <form name="contact-data">
-            <div role="group" class="modal-form" aria-labelledby="modal-head">
-              <p class="modal-header" id="modal-head">Залиште свої дані, ми вам передзвонимо</p>
-              <label class="label form-name">
+            <div role="group" class="contact-data-form" aria-labelledby="modal-head">
+              <p class="contact-data-form__title" id="modal-head">Залиште свої дані, ми вам передзвонимо</p>
+              <label class="сontact-data-form__label">
                 Ім'я
-                <svg class="modal-icon" width="18" height="18">
+                <svg class="contact-data-form__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
-                <input type="text" name="name" class="modal-input">
+                <input type="text" name="name" class="сontact-data-form__input">
               </label>
-              <label class="label form-phone">
+              <label class="сontact-data-form__label">
                 Телефон
-                <svg class="modal-icon" width="18" height="18">
+                <svg class="contact-data-form__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                <input type="tel" name="phone-number" class="modal-input">
+                <input type="tel" name="phone-number" class="сontact-data-form__input">
               </label>
-              <label class="label form-email">
+              <label class="сontact-data-form__label">
                 Пошта
-                <svg class="modal-icon" width="18" height="18">
+                <svg class="contact-data-form__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
-                <input type="email" name="email" class="modal-input">
+                <input type="email" name="email" class="сontact-data-form__input">
               </label>
-              <label class="label form-comment">
+              <label class="сontact-data-form__label">
                 Коментар
-                <textarea class="modal-comment" name="comment" rows="7" placeholder="Введіть текст"></textarea>
+                <textarea class="contact-data-form__comment" name="comment" rows="7" placeholder="Введіть текст"></textarea>
               </label>
-              <label class="checkbox-label">
-                <input type="checkbox" name="terms" value="agree" class="terms-checkbox">
+              <label class="сontact-data-form__label--checkbox">
+                <input type="checkbox" name="terms" value="agree" class="сontact-data-form__terms-checkbox visually-hidden">
                 <div class="checkbox-group">
-                  <svg class="checkbox-icon" width="16" height="15">
+                  <svg class="checkbox-group__checkbox-icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                   </svg>
-                  <svg class="checked-icon" width="16" height="15">
+                  <svg class="checkbox-group__checked-icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-checked"></use>
                   </svg>
                   </div>
-                Погоджуюся з розсилкою та приймаю <a href="" class="terms-link">Умови договору</a>
+                Погоджуюся з розсилкою та приймаю <a href="" class="сontact-data-form__link">Умови договору</a>
               </label>
-              <button type="submit" class="button submit-button">Відправити</button>
+              <button type="submit" class="button button--primary contact-data-form__button">Відправити</button>
             </div>
           </form>
         </div>

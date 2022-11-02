@@ -9,7 +9,7 @@
 
 .page-header-contacts__link {
     @extend %link;
-    @include font($weight: 500, $line-height: 1.14, $spacing: 0.02em);
+    @extend %contactsFont;
     padding: 32px 0;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,4 +32,15 @@
 .page-header-contacts__icon-phone {
     @extend %page-header-contacts__icon;
   vertical-align: bottom;
+}
+
+.page-footer-contacts__link {
+    @extend %link;
+    @extend %page-footerContactsFont ;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
 }

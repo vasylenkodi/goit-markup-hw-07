@@ -9,17 +9,15 @@
 }
 
 .team-card__title {
-    @include font($weight: 500, $size: 16px, $line-height: 1.19,$color: getColor('secondary-text-color'));
+    @extend %teamMemberNameFont;
 
-    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 .team-card__position {
-    @include font($size: 16px, $line-height: 1.19, $color: getColor('primary-text-color')) ;    
-
-    text-align: center;
+    @extend %teamMemberPositionFont;  
+    
     margin: 0 0 16px 0;
 }
 

@@ -1,11 +1,15 @@
-@mixin font($family: 'Roboto', $style: normal, $weight: 400, $size: 14px, $line-height: 1.71, $spacing: 0.03em, $color: getColor('primary-text-color')) {
-  font-family: $family, sans-serif;
-  font-style: $style;
-  font-weight: $weight;
-  font-size: $size;
-  line-height: $line-height;
-  letter-spacing: $spacing;
-  color: $color;
+
+@mixin input($padding: 12px 16px 12px 42px) {
+      width: 100%;
+    padding: 12px 16px 12px 42px;
+    margin-top: 4px;
+
+    @include font($size: 12px, $line-height: 1.17, $spacing: 0.01em, $color: getColor('secondary-text-color'));
+
+      border: 1px solid getColor('input-border-color');
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin transition($property) {

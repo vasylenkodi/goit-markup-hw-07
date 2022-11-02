@@ -21,13 +21,12 @@
 }
 
 .features-card__title {
-    @include font($weight: 700, $line-height: 1.14, $color: getColor('secondary-text-color'));
-    text-transform: uppercase;
+    @extend %secondaryTitleFont;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 .features-card__text {
-    @include font();
+    @extend %primaryTextFont;
     margin: 0;
 }

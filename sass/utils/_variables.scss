@@ -30,6 +30,9 @@ $colors: (
     'modal-placeholder-color': rgba(117, 117, 117, 0.5),
     'footer-social-medias-bg': rgba(255, 255, 255, 0.1),
     'send-out-input-border-color': rgba(255, 255, 255, 0.3),
+    'portfolio-card-secondary-shadow-color': rgba(0, 0, 0, 0.06),
+    'portfolio-card-tertiary-shadow-color': rgba(0, 0, 0, 0.16),
+    'gallery-overlay-bg-color': rgba(33, 150, 243, 0.9),
 );
 
 @function getColor ($key) {
